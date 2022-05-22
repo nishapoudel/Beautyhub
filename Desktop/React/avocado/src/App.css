@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/*home css*/
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex; /* so child elements can use flexbox stuff too! */
+}
+
+/*add item*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+
+.main{
+   margin: 3rem 3.5rem;
+   height: 80vh;
+   box-shadow: 0px 0px 40px #dad9d9;
+ 
+
+     
+  
+}
+.main-content{
+  border-left: 2px solid #EBECEF;
+  margin-left: 1rem;
+  height: 75vh;
+}
+.client{
+   /* margin: 5rem auto; */
+
+    margin-top: 1rem ;
+   
+ 
+   
+  
+}
+.add-client p{
+      display: block;
+      padding: 0.5rem;
+   
+    box-shadow: 0px 1px 1px #e6dede;
+   
+      
+}
+
+
+
+.containers{
+ 
+
+  padding: 1em;
+  margin: 1rem 8rem 1rem 6rem;
+  
+}
+.row-1{
+  margin-top: 0.5rem;
+}
+.col-25 {
+  float: left;
+  width: 12%;
+  margin-top: 6px;
+  margin-left: 3rem;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row-1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+   label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+      color:#3A2D84;
+    }
+    
+input[type=text], select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+input[type=checkbox] {
+ 
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  margin-top: 15px;
+  height: 18px;
+  width: 25px;
+}
+
+input[type=file] {
+ 
+  padding: 11px;
+ 
+}
+
+
+
+.row-1-submit{
+    margin-left: 4rem;
+}
+.create {
+  background-color:  #0B2343; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.cancel {
+  background-color: #E74A3B; 
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
