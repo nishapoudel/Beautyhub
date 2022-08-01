@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="navv.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="topnav" id="myTopnav">
+        <div class="topbar">
+          <div class="topbar-item">
+
+              <div class="left-item">
+                  <ul class="order-item">                          
+                      <li><i class="fa fa-facebook-f"></i></li>
+                      <li><i class="fa fa-instagram"></i></i></li>
+                      <li><i class="fa fa-google-plus"></i></i></li>
+                      <li><i class="fa fa-pinterest"></i></i></li>
+                      <li><i class="fa fa-twitter"></i></i></i></li>                        
+                  </ul>
+              </div>
+          
+              <div class="centre-item">
+                 <marquee>INTRODUCTORY OFFER: UP TO 20% OFF</marquee>
+              </div>
+          
+              <div class="right-item">
+                 <span><i class="material-icons" style="font-size:inherit;color:black">alarm</i> </span>                    
+                 <span> Time:- 8:00 to 9:00pm </span>
+
+              </div>
+
+         </div> <!--topbar-item div ended-->
+
+
+
+      </div>  <!--topbar ended-->
+  
+
+
+        <label class="logo">Beauty Hub</label>
+
+        <a href="#" class="active" id="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        <a href="#">Register</a>
+        <a href="#">Log In</a>
+
+        <a href="#" id="nav-button">
+          <i class="flaticon-clipboard iconp"></i>
+          &nbsp;&nbsp;Booking
+        </a>
+
+        <!-- <a href="#" id="book">Book Online</a> -->
+
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          id="icon"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!--topnav ended-->
+
+      <div class="main-body">
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="video/spa.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!--video body-->
+      <!--about us section started-->
+      <div class="about">
+        <div class="image-section">
+          <img src="about.jpg" alt="about" />
+        </div>
+        <div class="inner-section">
+          <h1>About Us</h1>
+          <p class="text">
+            For many years, BeautyHub has served the New York, NY metro area with
+            a commitment to service and value. We appreciate your interest and
+            look forward to earning your business.
+          </p>
+          <div class="skills">
+            <button>Contact Us</button>
+          </div>
+        </div>
+      </div>
+<!--about us ended-->      
+
+
+
+<!--service  section started-->
+
+<section> <!--service section started-->
+  <div class="services">
+      <div class="whole">
+          <h1>Services</h1>
+          <div class="content">
+              <div class="card">
+                  <div class="card-image">
+                      <img src="./images/hairremoval.jpg" alt="hair removal"/>
+                  </div>
+                  <div class="box-service">
+                      <h3>Waxing Service</h3>           
+                      <button class="btn-2"><a href="">See more details</a></button>
+                  </div>
+              </div>
+              
+              <div class="card">
+                  <div class="card-image">
+                      <img src="./images/acne-treatment.png" alt="acne Treatment"/>
+                  </div>
+                  <div class="box-service">
+                      
+                      <h3>Facial Treatment</h3>          
+                      <button class="btn-2"><a href="">See more details</a></button>
+                      
+                  </div>
+              </div>
+              
+              <div class="card">
+                  <div class="card-image">
+                      <img src="./images/hairtreatment.jpg" alt="hair care"/>
+                  </div>
+                  <div class="box-service">
+                      <h3>Hair Care Service</h3>
+                      <button class="btn-2"><a href="">See more details</a></button>   
+                 </div>
+              </div>
+              
+          </div>
+          <div class="view-btn">
+              <button class="btn-1"><a href="">View All</a></button>
+          </div>
+
+      </div> <!--whole div ended-->
+  </div> <!--service div ended-->
+  
+</section> <!--section ended-->
+<!--appoinment section started-->
+
+<div class="appoinment-container">
+<div class="appointment">
+  <h1 class="title">
+    Book Your Appointment
+  </h1>
+
+  <form>
+    <div class="form-body">
+      <div class="fl">
+        <div class="box">
+          <label for="location" class="labels"
+            ><b>Office Location</b></label
+          >
+          <input type="text" placeholder="" name="location" />
+          <span class="error" id="errorfname"> </span>
+        </div>
+
+        <div class="box boxlname">
+          <label for="date" class="labels"><b>Date</b></label>
+          <input type="date" name="date" />
+          <span class="error" id="errorlname"> </span>
+        </div>
+      </div>
+
+      <div class="fl">
+        <div class="box">
+          <label for="email" class="labels"><b>Email</b></label>
+          <input type="text" placeholder="" name="email" />
+          <span class="error" id="errorfname"> </span>
+        </div>
+
+        <div class="box boxlname">
+          <label for="number" class="labels"><b>Phone Number</b></label>
+          <input type="text" name="number" />
+          <span class="error" id="errorlname"> </span>
+        </div>
+      </div>
+
+      <div class="box-single">
+        <label class="appoint"><b> Appointment For:</b></label>
+        <label for="f-option" class="l-radio">
+          <input
+            type="radio"
+            id="f-option"
+            name="selector"
+            tabindex="1"
+          />
+          <span>Individual</span>
+        </label>
+        <label for="s-option" class="l-radio">
+          <input
+            type="radio"
+            id="s-option"
+            name="selector"
+            tabindex="2"
+          />
+          <span>Group</span>
+        </label>
+      </div>
+
+      <div class="customer-table">
+        <div style="overflow-x: auto" ;>
+          <table class="table-sort">
+            <tr>
+              <th>Full Name</th>
+              <th>Categories</th>
+              <th>Service Time</th>
+              <th>Staff</th>
+              <th>Promo Code</th>
+              <th>Total Price</th>
+              <th>Gross Price</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="info" id="info-name">
+                  <input type="text" name="name" />
+                </div>
+              </td>
+
+              <td>
+                <div class="info">
+                  <select name="categories" id="category">
+                    <option value="Choose Category">
+                      Choose Category
+                    </option>
+                    <option value="facial">Facial</option>
+                    <option value="cleansing">Cleansing</option>
+                    <option value="waxing">Waxing</option>
+                  </select>
+                </div>
+              </td>
+
+              <td>
+                <div class="info">
+                  <select name="serice" id="service">
+                    <option value="Choose Service">
+                      Choose Category
+                    </option>
+                    <option value="facial">Facial</option>
+                    <option value="cleansing">Cleansing</option>
+                    <option value="waxing">Waxing</option>
+                  </select>
+                </div>
+              </td>
+
+              <td>
+                <div class="info">
+                  <select name="staff" id="staff">
+                    <option value="Choose Staff">Choose Staff</option>
+                    <option value="Pem">9:00 AM</option>
+                    <option value="Anny">9:00 AM</option>
+                  </select>
+                </div>
+              </td>
+
+              <td>
+                <div class="info">
+                  <input type="text" placeholder="" name="code" />
+                </div>
+              </td>
+
+              <td>
+                <div class="info">
+                  <input type="text" name="price" />
+                </div>
+              </td>
+
+              <td>
+                <div class="info">
+                  <input type="text" name="gross" />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="box-single">
+        <label class="appoint"><b> Message</b></label>
+        <textarea class="textarea" placeholder="Enter a message ...">
+        </textarea>
+      </div>
+
+      <div class="box-single submitbtn">
+        <button class="button button2">Book Appointment</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!--appoinment section ended-->
+
+</div> 
+<!--appoinment-container ended-->
+
+<!--Location section started-->
+
+<div class="location  ">
+  
+  <h1 class="title-location">Location</h1>
+
+<div class="location-rows">
+<div class="location-slider">
+         <div class="location-box reveal " >        
+             <div class="location-text">
+                 <div class="location-detail">
+                 <i class="fa fa-map-marker"></i>
+                        <p class="address"> 467 5th Ave., Brooklyn, NY 11215</class=></p>
+                 </div>
+
+                 <div class="location-detail">
+                 <a href="tel: +17184992233">  <i class="fa fa-phone"></i>
+                         +17184992233</a>
+                 </div>
+
+                 <div class="location-detail">
+                 <p> <i class="fa fa-envelope"></i>
+                         blossombrows1@gmail.com</p>
+                 </div>
+
+             </div>
+
+         </div>
+
+         <div class="location-box reveal swiper-slide">
+             <div class="location-text">
+                 <div class="location-detail">
+                   <i class="fa fa-map-marker"></i>
+                   <p class="address"> 315A 9th Street, Brooklyn, NY 11215</p>
+                 </div>
+ 
+                 <div class="location-detail">
+                    <p> <i class="fa fa-phone"></i>
+                     +17184991122</p>
+                 </div>
+ 
+                 <div class="location-detail">
+                    <p> <i class="fa fa-envelope"></i>
+                     blossombrows2@gmail.com  </p>
+                 </div>
+ 
+             </div>
+ 
+         </div>
+
+     
+         <div class="location-box reveal swiper-slide">
+             <div class="location-text">
+                 <div class="location-detail">
+                    <i class="fa fa-map-marker"></i>
+                    <p class="address">      467 5th Ave., Brooklyn, NY 11215</p>
+                 </div>
+ 
+                 <div class="location-detail">
+                    <p> <i class="fa fa-phone"></i>
+                         +17184992233</p>
+                 </div>
+ 
+                 <div class="location-detail">
+                    <p> <i class="fa fa-envelope"></i>
+                         blossombrows1@gmail.com</p>
+                 </div>
+ 
+             </div>
+ 
+         </div>
+
+         <div class="location-box reveal swiper-slide">
+             <div class="location-text">
+                 <div class="location-detail">
+                   <i class="fa fa-map-marker"></i>
+                   <p class="address">   272 5th Ave., Brooklyn, NY 11215</p>
+                 </div>
+ 
+                 <div class="location-detail">
+                    <p> <i class="fa fa-phone"></i>
+                     +17185763087</p>
+                 </div>
+ 
+                 <div class="location-detail">
+                    <p> <i class="fa fa-envelope"></i>
+                     blossombrows4@gmail.com</p>
+                 </div>
+ 
+             </div>
+ 
+         </div>
+       
+       
+</div>
+
+
+<div class="location-slider " id="second-row">    
+ <div class="location-box reveal " >
+     <div class="location-text">
+         <div class="location-detail">
+        <i class="fa fa-map-marker"></i>
+        <p class="address">   301 E76th Street, New York, NY 10021</p>
+         </div>
+
+         <div class="location-detail">
+         <p> <i class="fa fa-phone"></i>
+             +12123210622</p>
+         </div>
+
+         <div class="location-detail">
+         <p> <i class="fa fa-envelope"></i>
+             blossombrows3@gmail.com</p>
+         </div>
+
+     </div>
+
+ </div>
+
+
+ <div class="location-box reveal swiper-slide">
+     <div class="location-text">
+         <div class="location-detail">
+            <i class="fa fa-map-marker"></i>
+            <p class="address">   1405 2nd Ave., New York, NY 10021</p>
+         </div>
+
+         <div class="location-detail">
+            <p> <i class="fa fa-phone"></i>
+             +12126062050</p>
+         </div>
+
+         <div class="location-detail">
+            <p> <i class="fa fa-envelope"></i>
+             blossombrows7@gmail.com</p>
+         </div>
+
+     </div>
+
+ </div>
+
+
+ <div class="location-box reveal swiper-slide">
+     <div class="location-text">
+         <div class="location-detail">
+             <i class="fa fa-map-marker"></i>
+             <p class="address">   96 7th Ave., New York, NY 10011</p>
+         </div>
+
+         <div class="location-detail">
+            <p> <i class="fa fa-phone"></i>
+             +121265596673</p>
+         </div>
+
+         <div class="location-detail">
+            <p> <i class="fa fa-envelope"></i>
+             blossombrows596@gmail.com</p>
+         </div>
+
+     </div>
+
+ </div>
+</div>
+
+
+
+</div>
+</div>
+<!--location div ended-->
+
+<!--contact div started-->
+
+
+<div class="contact-container">
+  <h2 class="titles">Get in Touch</h2>
+  <div class="contact-info">
+      <form class="forms" >
+          <h3>Write Us</h3>
+          <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <input type="tel" name="tel" id="tel" placeholder="tel: XXX XXX XXXX" required>
+          <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message Here..."></textarea>
+          <button type="submit">Send</button>
+      </form>
+      <div class="details">
+          <h3>Contact Us</h3>
+          <div class="contact-items-wrapper">
+              <div class="contact-items">
+                  <i class="fa fa-map-marker"></i>
+                  <p class="details-title"><strong>Address:</strong> </p><p class="sub-title"> 315A 9th Street, Brooklyn, NY 11215</p>
+              </div>
+              <div class="contact-items">
+                  <i i class="fa fa-phone"></i>
+                  <p class="details-title"><strong>Phone:</strong> </p><p class="sub-title"> +1-000-000-00</p>
+                 
+              </div>
+              <div class="contact-items">
+                  <i class="fa fa-envelope"></i>
+                  <p class="details-title"><strong>Email:</strong></p><p class="sub-title"><a href="#"> beautyhub@xyz.com</a> </p>
+              </div>
+              
+          </div>
+
+      </div>
+
+  </div>
+
+</div> 
+<!--contact ended-->
+<!-- footer started -->
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="row">
+          <div class="footer-col  reveal">
+              <h4>company</h4>
+              
+                  <p>Blossom Brows has the experience and expertise to get the job done right the first time. Our skilled professionals use only the finest tools and products to give you the look you want. We guarantee your satisfaction.</p>
+                  <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+          </div>
+          <div class="footer-col mid reveal">
+              <h4>Services</h4>
+              <ul>
+             
+
+                  <li><a href="#">Waxing</a></li>
+                  <li><a href="#">Male Services</a></li>
+                  <li><a href="#">Threading</a></li>
+                  <li><a href="#">Eyelash Extensions</a></li>
+                  <li><a href="#">Tinting Services</a></li>
+                  <li><a href="#">Henna Tattoos</a></li>
+              </ul>
+          </div>
+          <div class="footer-col mid reveal">
+              <h4>Pages</h4>
+              <ul>
+                      
+                <li><a href="#"> Home</a></li>
+                  <li><a href="#"> Contact</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Coupons</a></li>
+                  <li><a href="#"> About Us</a></li>
+                
+                  <li><a href="#"> Cancel Booking   </a></li>
+              </ul>
+          </div>
+          <div class="footer-col reveal" id="col-last">
+              <h4>Meet us here!</h4>
+
+
+              <div class="mapouter" id="mapouter">
+               <div class="gmap_canvas" id="map_canvas">
+                   <iframe   class= "map" id="map" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+                   </iframe>
+                   <a href="https://123movies-to.org"></a><br>
+                   <a href="https://www.embedgooglemap.net"></a>
+               </div>
+
+               <!-- <iframe width="100%" height="250" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br /> -->
+           </div>
+
+              
+
+          </div>
+
+      </div>
+      <div class="row-copyright ">
+      <p class="copyright"> © Blossom Brows Threading Salon   2018 - 2020 All rights reserved.
+   </p>
+      </div>
+     
+  </div>
+</footer>
+<!-- end of footer -->
+
+
+
+
+
+
+
+    </div> <!--container ended-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("myTopnav").style.height = "110px ";
+        } else {
+          document.getElementById("myTopnav").style.height = "110px ";
+        }
+      }
+
+      //location js started
+      window.addEventListener('scroll', reveal);
+        function reveal(){
+            let reveals = document.querySelectorAll('.reveal');
+            for(var i =0; i<reveals.length; i++)
+            {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint =150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active')
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+
+            }
+
+        }
+    </script>
+  </body>
+</html>
